@@ -1,6 +1,8 @@
 {
   "name": "darwin-ui-dataviewer",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Dataviewer for darwin project",
+  "author": "Marian Jarembinsky <marian.jarembinsky@codexa.sk>",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
