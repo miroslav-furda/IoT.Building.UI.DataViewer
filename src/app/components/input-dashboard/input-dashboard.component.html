@@ -1,0 +1,34 @@
+<div class-="container">
+  <h1 class="text-center">
+    Data Viewer
+  </h1>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="deviceID">Device ID:</label>
+      <div class="col-md-10">
+        <input type="text" name="deviceID" [(ngModel)]="inputChartdata.deviceID" class="form-control" id="deviceID"
+        #deviceIdTempRef="ngModel"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="timeFrom">From:</label>
+      <div class="col-md-10">
+        <input type="text" name="timestampFrom" [(ngModel)]="inputChartdata.timestampFrom" class="form-control" id="timeFrom" placeholder="chose date and or time"
+        #timestampFromToSearchRef="ngModel"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="timeTo">Until:</label>
+      <div class="col-md-10">
+        <input type="text" name="timestampTo" [(ngModel)]="inputChartdata.timestampTo" class="form-control" id="timeTo" placeholder="chose date and or time"
+        #timestampToTempRef="ngModel"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-md-10">
+        <button class="btn btn-default" (click)="loadDataForDashboard()">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
